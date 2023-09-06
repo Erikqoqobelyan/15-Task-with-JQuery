@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery Problems ans Solution</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>15 Interesting task and solution with JQuery</h1>
+    <div class="task_1 task">
+      <p>1)Disable right click menu in html page using jquery.</p>
+      <p>Click the right mouse button, it is disabled.</p>
+    </div>
+    <hr>
+    <div class="task_2 task">
+      <p>2)Disable the submit button until the visitor has clicked a check box.</p>
+      <input id="accept" name="accept" type="checkbox" value="y"/>
+      <label for="accept">I accept</label><br>
+      <input id="submitbtn" disabled="disabled" name="Submit" type="submit" value="Submit" />
+    </div>
+    <hr>
+    <div class="task_3 task">
+      <p>3)Blink text using jQuery.</p>
+      <p>jQuery <span class="blink">Exercises</span> and Solution</p>
+    </div>
+    <hr>
+    <div class="task_4 task">
+      <p>4)Print a page using jQuery.</p>
+      <a  class="printPage" href="#">Print</a>
+    </div>
+    <hr>
+    <div class="task_5 task">
+      <p>5)Limit character input in the textarea including count.</p>
+      <form>
+        <label>Maximum 15 characters</label>
+        <textarea id="textarea" maxlength="15" style="display:block;"></textarea>
+        <span id="rchars">15</span> Character(s) Remaining
+      </form>
+    </div>
+    <hr>
+    <div class="task_6 task">
+      <p>6) Select values from a JSON object using jQuery.(look at the code)</p>
+      <div id="divSelect"></div>
+    </div>
+    <hr>
+    <div class="task_7 task">
+      <p>7) How to get the value of a textbox using jQuery</p>
+      <input type="text" id="get_value" value="Input text here">
+      <p id="input_val"></p>
+    </div>
+    <hr>
+    <div class="task_8 task">
+      <p class="element">8)Distinguish between left and right mouse click with jQuery.</p>
+      <p id="left_or_right"></p>
+    </div>
+    <hr>
+    <div class="task_9">
+      <p class="task">9)Count number of rows and columns in a table using jQuery.</p>
+      <table id="table1">
+       <tr>
+        <th>Tools</th>
+         <th>Description</th>
+       </tr>
+       <tr>
+         <td>phpMyAdmin</td>
+         <td>Third party, Free, Web based </td>
+       </tr>
+       <tr>
+         <td>HeidiSQL</td>
+         <td>Third party, Free, For Windows </td>
+       </tr>
+       <tr>
+         <td>Adminer</td>
+         <td>Third party, Free</td>
+       </tr>
+       <tr>
+         <td>DBEdit </td>
+         <td>Third party, Free</td>
+       </tr>
+       <tr>
+        <td>dbForge GUI Tools</td>
+        <td>Third party, Free</td>
+       </tr>
+       <tr>
+        <td> Navicat </td>
+        <td>Third party, Commercial </td>
+       </tr>
+       <tr>
+        <td>Maatkit</td>
+        <td>Third party, Command line, free </td>
+       </tr>
+       <tr>
+        <td>MySQL Sandbox</td>
+        <td>Third party, Command line, free</td>
+       </tr>
+       <tr>
+        <td>SQLBuddy </td>
+        <td> A free Web-based front end, developed in PHP.</td>
+       </tr>
+       <tr>
+        <td>SQLyog </td>
+        <td>Commercial, but a free 'community' edition is available.</td>
+       </tr>
+       <tr>
+         <td>Toad for MySQL </td>
+         <td>Third party, free  from Quest Software</td>
+       </tr>
+      </table>
+      <p class="task" id="rows_count"></p>
+      <p style="padding: 0px 0 20px 20px;" id="columns_count"></p>
+    </div>
+    <hr>
+    <div class="task_10 task">
+      <p>10) Remove a specific value from an array using jQuery.</p>
+      <p id="array_before_removing"></p>
+      <p id="array_after_removing"></p>
+      <p></p>
+    </div>
+    <hr>
+    <div class="task_11 task">
+      <p>11)Attaches a change event to the select element (Use to create a drop-down list.) that gets the text for each selected option and writes them in a paragraph.</p>
+      <select name="colors" multiple="multiple">
+        <option selected="selected">Red</option>
+        <option selected="selected">Green</option>
+        <option>Blue</option>
+        <option>Orange</option>
+        <option>Black</option>
+        <option>White</option>
+      </select>
+      <p id="selected_value"></p>
+    </div>
+    <hr>
+    <div class="task_12 task">
+      <p>12)Finds all elements that are checked or selected.</p>
+      <form class="task_12_form">
+        <input type="checkbox" id="check_1" name="color" value="Bike">
+        <label for="check_1">Bike</label>
+        <input type="checkbox" id="check_2" name="color" value="Car">
+        <label for="check_2">Green</label>
+        <input type="checkbox" id="check_3" name="color" value="Car">
+        <label for="check_3">Blue</label>
+        <input type="checkbox" id="check_4" name="color" value="Car">
+        <label for="check_4">Black</label>
+      </form>
+      <p id="checked_count"></p>
+    </div>
+    <hr>
+    <div class="task_13 task">
+      <p>13)Finds the checked radio input.</p>
+      <form class="task_14_form">
+        <input type="radio" id="radio_1" name="color" value="Red">
+        <label for="radio_1">Red</label>
+        <input type="radio" id="radio_2" name="color" value="Green">
+        <label for="radio_2">Green</label>
+        <input type="radio" id="radio_3" name="color" value="Blue">
+        <label for="radio_3">Blue</label>
+        <input type="radio" id="radio_4" name="color" value="Black">
+        <label for="radio_4">Black</label>
+      </form>
+      <p id="radio_val"></p>
+    </div>
+    <hr>
+    <div class="task_14 task">
+      <p>14)Display the mouse position relative to the left and top edges of the document</p>
+      <div id="position"></div>
+    </div>
+    <hr>
+    <div class="task_15 task">
+      <p>15)Scroll to the top of the page with jQuery.</p>
+      <a href='#top'>Go Top</a>
+    </div>
+  </body>
+</html>

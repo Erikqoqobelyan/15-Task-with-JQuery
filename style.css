@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 19px;
+}
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 10px;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.task{
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+h1{
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
